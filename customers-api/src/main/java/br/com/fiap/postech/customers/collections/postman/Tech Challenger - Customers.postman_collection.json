@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "1cb1d93d-bc3c-4c17-b9da-6cd511d74ea3",
+		"name": "Tech Challenger - Customers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15088346"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Teste\", \r\n    \"email\": \"test3e2com@email\", \r\n    \"phone\": \"3832138548\", \r\n    \"cellPhone\": \"38998413888\", \r\n    \"zipCode\": \"39401365\", \r\n    \"address\": \"Teste\", \r\n    \"addressNumber\": \"600\", \r\n    \"neighborhood\": \"Bairro\", \r\n    \"city\": \"Cidade\", \r\n    \"state\": \"Estado\", \r\n    \"complement\": \"Complemento\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer_management_path}}/customers",
+					"host": [
+						"{{customer_management_path}}"
+					],
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{customer_management_path}}/id/:id",
+					"host": [
+						"{{customer_management_path}}"
+					],
+					"path": [
+						"id",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer By Email",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{customer_management_path}}/email/:email",
+					"host": [
+						"{{customer_management_path}}"
+					],
+					"path": [
+						"email",
+						":email"
+					],
+					"variable": [
+						{
+							"key": "email",
+							"value": "testecom@email"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Teste\", \r\n    \"phone\": \"3832138548\", \r\n    \"cellPhone\": \"38998413888\", \r\n    \"zipCode\": \"39401365\", \r\n    \"address\": \"lçkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\", \r\n    \"addressNumber\": \"600\", \r\n    \"neighborhood\": \"Bairro\", \r\n    \"city\": \"Cidade\", \r\n    \"state\": \"Estado\", \r\n    \"complement\": \"Complemento\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer_management_path}}/customers/:id",
+					"host": [
+						"{{customer_management_path}}"
+					],
+					"path": [
+						"customers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer By Filters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{customer_management_path}}/customers",
+					"host": [
+						"{{customer_management_path}}"
+					],
+					"path": [
+						"customers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Teste",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "teste@teste.com",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "3832138548",
+							"disabled": true
+						},
+						{
+							"key": "cellPhone",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "zipCode",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "neighborhood",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "city",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "state",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "customer_management_path",
+			"value": "http://localhost:8080/api/customermanagement/v1",
+			"type": "string"
+		}
+	]
+}

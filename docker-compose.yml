@@ -1,0 +1,68 @@
+services:
+  zookeeper:
+    extends:
+      file: logistics-api/docker-compose.yml
+      service: zookeeper
+
+  kafka:
+    extends:
+      file: logistics-api/docker-compose.yml
+      service: kafka
+
+  kafdrop:
+    extends:
+      file: logistics-api/docker-compose.yml
+      service: kafdrop
+
+  products-management:
+    container_name: products-api
+    build:
+      context: ./products-api
+    networks:
+      - localhost
+
+  customers-management:
+    container_name: customers-api
+    build:
+      context: ./customers-api
+    networks:
+      - localhost
+
+  orders-management:
+    container_name: orders-api
+    build:
+      context: ./orders-api
+    networks:
+      - localhost
+    depends_on:
+      - customers-management
+      - products-management
+
+  logistics-management:
+    container_name: logistics-api
+    build:
+      context: ./logistics-api
+    networks:
+      - localhost
+    depends_on:
+      - customers-management
+      - products-management
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+    depends_on:
+      - customers-management
+      - products-management
+      - orders-management
+      - logistics-management
+    networks:
+      - localhost
+
+networks:
+  localhost:
+    driver: bridge
+    external: false

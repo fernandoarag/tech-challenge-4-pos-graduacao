@@ -1,0 +1,113 @@
+Index: docker-compose.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>version: '3.8'\r\n\r\nservices:\r\n  app1:\r\n    build:\r\n      context: ./products-api\r\n    ports:\r\n      - \"8080:8080\"\r\n    container_name: products-api\r\n    networks:\r\n      - minha_rede\r\n\r\n  app2:\r\n    build:\r\n      context: ./customers-api\r\n    ports:\r\n      - \"8081:8080\"\r\n    container_name: customers-api\r\n    networks:\r\n      - minha_rede\r\n\r\nnetworks:\r\n  minha_rede:\r\n    driver: bridge
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/docker-compose.yml b/docker-compose.yml
+--- a/docker-compose.yml	(revision 7eb0be21b8a65f4d59e0cbe748d81f928f982b49)
++++ b/docker-compose.yml	(date 1740103157557)
+@@ -1,21 +1,27 @@
+-version: '3.8'
+-
+ services:
+-  app1:
++  products-management:
+     build:
+       context: ./products-api
+-    ports:
+-      - "8080:8080"
+     container_name: products-api
+     networks:
+       - minha_rede
+ 
+-  app2:
++  customers-management:
+     build:
+       context: ./customers-api
++    container_name: customers-api
++    networks:
++      - minha_rede
++
++  nginx:
++    image: nginx:latest
++    volumes:
++      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+     ports:
+-      - "8081:8080"
+-    container_name: customers-api
++      - "80:80"
++    depends_on:
++      - products-management
++      - customers-management
+     networks:
+       - minha_rede
+ 
+Index: nginx.conf
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/nginx.conf b/nginx.conf
+new file mode 100644
+--- /dev/null	(date 1740103559663)
++++ b/nginx.conf	(date 1740103559663)
+@@ -0,0 +1,37 @@
++events {
++    worker_connections 1024;
++}
++
++http {
++    upstream products-management {
++        server products-api:8080;
++    }
++
++    upstream customers-management {
++        server customers-api:8080;
++    }
++
++    server {
++        listen 80;
++
++        location /api {
++            proxy_pass http://products-management/api/productsmanagement;
++            proxy_set_header Host $host;
++            proxy_set_header X-Real-IP $remote_addr;
++            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
++            proxy_set_header X-Forwarded-Proto $scheme;
++        }
++
++        location /api {
++            proxy_pass http://customers-management/api/customermanagement/v1;
++            proxy_set_header Host $host;
++            proxy_set_header X-Real-IP $remote_addr;
++            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
++            proxy_set_header X-Forwarded-Proto $scheme;
++        }
++
++        location / {
++            return 404;
++        }
++    }
++}
+\ No newline at end of file
+Index: products-api/Dockerfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Use the official Maven image with Eclipse Temurin JDK 21 to build the application\r\nFROM maven:3.9.4-eclipse-temurin-21 AS builder\r\n\r\n# Set the working directory inside the container\r\nWORKDIR /app\r\n\r\n# Copy the project into the container\r\nCOPY . .\r\n\r\n# Run 'mvn generate-sources' to generate code from OpenAPI specifications\r\nRUN mvn generate-sources\r\n\r\n# Build the application artifact\r\nRUN mvn clean package -DskipTests\r\n\r\n# Use a minimal Eclipse Temurin JDK 21 image to run the application\r\nFROM eclipse-temurin:21-jre\r\n\r\n# Set the working directory\r\nWORKDIR /app\r\n\r\n# Copy the JAR generated in the build stage\r\nCOPY --from=builder /app/target/products-0.0.1-SNAPSHOT.jar /app/products.jar\r\n\r\n# Create and mount a volume for the CSV files\r\nVOLUME /app/batch-files\r\n\r\n# Set the environment variable to point to the volume\r\nENV DIR_FILE=/app/batch-files\r\n\r\n# Expose ports 8080 and 8081\r\nEXPOSE 8080 8080\r\n\r\n# Command to run the application\r\nENTRYPOINT [\"java\", \"-jar\", \"products.jar\"]\r\n\r\n# Set the image name\r\nLABEL name=\"products\"\r\nLABEL authors=\"iagoomes\"
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/products-api/Dockerfile b/products-api/Dockerfile
+--- a/products-api/Dockerfile	(revision 7eb0be21b8a65f4d59e0cbe748d81f928f982b49)
++++ b/products-api/Dockerfile	(date 1740099111400)
+@@ -20,7 +20,7 @@
+ WORKDIR /app
+ 
+ # Copy the JAR generated in the build stage
+-COPY --from=builder /app/target/products-0.0.1-SNAPSHOT.jar /app/products.jar
++COPY --from=builder /app/target/products-api-0.0.1-SNAPSHOT.jar /app/products.jar
+ 
+ # Create and mount a volume for the CSV files
+ VOLUME /app/batch-files

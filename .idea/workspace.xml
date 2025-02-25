@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88857430-bcde-4206-8ee0-7ea0a3af8a5c" name="Changes" comment="Unificacao dos projetos">
+      <change beforePath="$PROJECT_DIR$/customers-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/customers-api/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../logistics">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/logistics-api">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/../logistics">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="logistics" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="hotfix/creating-pom-file-pattern" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:iagoomes/tech-challenge4.git&quot;,
+    &quot;accountId&quot;: &quot;a6705903-2c8a-48e0-ac5d-6932a03ce58e&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2tKRXSAj3ZlDzVCMSNIcV1uNYn4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LogisticsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.app1: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.app2: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.logistics-management: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.nginx: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.products-management: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.logistics-api/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.logistics-api: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build logistics-api.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'logistics.test'.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.logistics [build].executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in logistics-api.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in techchallenge4.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.logistics-api [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.orders [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.orders [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.products-api [clean,generate-source].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.products-api [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [-f,./pom.xml,clean...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [clean,generate-resources].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [clean,generate-source].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [dependence].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [dependency:tree].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [dependency].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [install:install-file,\\...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [install:install-file...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.techchallenge4 [mvn,install:install-file...].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CustomersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LogisticsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrdersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/repos/tech-challenge4/orders-api/src/main/java/br/com/fiap/postech/orders/application/usecases&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/repos/tech-challenge4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31746033&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;h2&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\repos\tech-challenge4" />
+      <recent name="D:\repos\tech-challenge4\products-api\src\main\resources" />
+      <recent name="D:\repos\tech-challenge4\products-api\src\main\java\br\com\fiap\postech\products" />
+      <recent name="D:\repos\tech-challenge4\products-api\src" />
+      <recent name="D:\repos\tech-challenge4\logistics-api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\repos\tech-challenge4\logistics-api\src\test\java\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.fiap.postech.logistics.interfaces.rest" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.fiap.postech.orders.interfaces.dto" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn dependence" />
+      <command value="mvn dependency" />
+      <command value="mvn dependency:tree" />
+      <command value="mvn install:install-file  \     -Dfile=path/to/techchallenge4-1.0.0.pom  \     -DgroupId=br.com.fiap.postech  \     -DartifactId=techchallenge4  \     -Dversion=1.0.0  \     -Dpackaging=pom" />
+      <command value="mvn install:install-file Dfile=path/to/techchallenge4-1.0.0.pom DgroupId=techchallenge4 Dversion=1.0.0 Dpackaging=pom" />
+      <command value="mvn install:install-file Dfile=app/pom.xml DgroupId=techchallenge4 Dversion=1.0.0 Dpackaging=pom" />
+      <command value="mvn install:install-file -Dfile=pom.xml -DgroupId=br.com.fiap.postech -DartifactId=techchallenge4 -Dversion=1.0.0 -Dpackaging=pom" />
+      <command value="mvn mvn install:install-file -Dfile=/app/pom.xml -DgroupId=br.com.fiap.postech -DartifactId=techchallenge4 -Dversion=1.0.0 -Dpackaging=pom" />
+      <command value="mvn install:install-file -Dfile=/app/pom.xml -DgroupId=br.com.fiap.postech -DartifactId=techchallenge4 -Dversion=1.0.0 -Dpackaging=pom" />
+      <command value="mvn mvn install:install-file -Dfile=../pom.xml -DgroupId=br.com.fiap.postech -DartifactId=techchallenge4 -Dversion=1.0.0 -Dpackaging=pom" />
+      <command value="mvn install:install-file -Dfile=../pom.xml -DgroupId=br.com.fiap.postech -DartifactId=techchallenge4 -Dversion=1.0.0 -Dpackaging=pom" />
+      <command value="mvn install:install-file -Dfile=./pom.xml -DgroupId=br.com.fiap.postech -DartifactId=techchallenge4 -Dversion=1.0.0 -Dpackaging=pom" />
+      <command value="mvn -f ./pom.xml clean package -Dmaven.test.skip=true -Dmaven.repo.local=/root/.m2/repository -e" />
+      <command value="mvn clean generate-resources" />
+      <command value="mvn clean generate-source" />
+    </option>
+  </component>
+  <component name="RunAnythingContextRecentDirectoryCache">
+    <option name="paths">
+      <recentPaths value="$PROJECT_DIR$/products-api" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+    <configuration name="Tests in 'logistics.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/logistics-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="logistics [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../logistics" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#3" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="All in techchallenge4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="techchallenge4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="tech-challenge4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="tech-challenge4" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CustomersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="customermanagement" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.fiap.postech.customers.CustomersApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogisticsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="logistics.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.fiap.postech.logistics.LogisticsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrdersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="orders" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.fiap.postech.orders.OrdersApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="products" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tech.ProductsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="products-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.fiap.postech.products.ProductsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Gradle.Tests in 'logistics.test'" />
+      <item itemvalue="Gradle.logistics [build]" />
+      <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="JUnit.All tests with coverage for customers" />
+      <item itemvalue="JUnit.All in techchallenge4" />
+      <item itemvalue="Spring Boot.ProductsApplication (1)" />
+      <item itemvalue="Spring Boot.CustomersApplication" />
+      <item itemvalue="Spring Boot.LogisticsApplication" />
+      <item itemvalue="Spring Boot.OrdersApplication" />
+      <item itemvalue="Spring Boot.ProductsApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
+        <item itemvalue="Gradle.Tests in 'logistics.test'" />
+        <item itemvalue="JUnit.All in techchallenge4" />
+        <item itemvalue="Gradle.logistics [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88857430-bcde-4206-8ee0-7ea0a3af8a5c" name="Changes" comment="" />
+      <created>1740098818993</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740098818993</updated>
+      <workItem from="1740098820046" duration="6089000" />
+      <workItem from="1740105593832" duration="5889000" />
+      <workItem from="1740111603083" duration="450000" />
+      <workItem from="1740112357826" duration="215000" />
+      <workItem from="1740113270836" duration="300000" />
+      <workItem from="1740114158383" duration="12000" />
+      <workItem from="1740115689831" duration="157000" />
+      <workItem from="1740115855631" duration="6000" />
+      <workItem from="1740116170984" duration="18085000" />
+      <workItem from="1740157658549" duration="2833000" />
+      <workItem from="1740160668127" duration="43216000" />
+      <workItem from="1740255448198" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.kafka:kafka_2.13" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.integration:spring-integration-core" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-stream" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Unificacao dos projetos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unificacao dos projetos" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tech_challenge4$All_in_logistics_api.ic" NAME="All in logistics-api Coverage Results" MODIFIED="1740127687572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/tech_challenge4$Tests_in__logistics_test_.ic" NAME="Tests in 'logistics.test' Coverage Results" MODIFIED="1740169712141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>

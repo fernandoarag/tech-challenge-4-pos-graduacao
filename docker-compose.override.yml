@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  zookeeper:
+    extends:
+      file: logistics-api/docker-compose.yml
+      service: zookeeper
+
+  kafka:
+    extends:
+      file: logistics-api/docker-compose.yml
+      service: kafka
+
+  kafdrop:
+    extends:
+      file: logistics-api/docker-compose.yml
+      service: kafdrop

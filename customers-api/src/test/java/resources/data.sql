@@ -1,0 +1,14 @@
+INSERT INTO TB_CUSTOMERS (NAME, EMAIL, PHONE, CELL_PHONE, ZIP_CODE, ADDRESS, ADDRESS_NUMBER, NEIGHBORHOOD, CITY, STATE, COMPLEMENT)
+VALUES ('Name 001', 'old.email@example.com', '111111111', '111111111', '12345678', 'New Address', '123', 'New Neighborhood', 'New City', 'New State', 'New Complement');
+
+INSERT INTO TB_CUSTOMERS (NAME, EMAIL, PHONE, CELL_PHONE, ZIP_CODE, ADDRESS, ADDRESS_NUMBER, NEIGHBORHOOD, CITY, STATE, COMPLEMENT)
+VALUES ('Name 002', 'old2.email@example.com', '222222222', '22222222', '12345678', 'New Address', '123', 'New Neighborhood', 'New City', 'New State', 'New Complement');
+
+INSERT INTO TB_CUSTOMERS (NAME, EMAIL, PHONE, CELL_PHONE, ZIP_CODE, ADDRESS, ADDRESS_NUMBER, NEIGHBORHOOD, CITY, STATE, COMPLEMENT)
+VALUES ('Name 003', 'old3.email@example.com', '333333333', '333333333', '12345678', 'New Address', '123', 'New Neighborhood', 'New City', 'New State', 'New Complement');
+
+INSERT INTO TB_CUSTOMERS (NAME, EMAIL, PHONE, CELL_PHONE, ZIP_CODE, ADDRESS, ADDRESS_NUMBER, NEIGHBORHOOD, CITY, STATE, COMPLEMENT)
+VALUES ('Name 004', 'old4.email@example.com', '444444444', '444444444', '12345678', 'New Address', '123', 'New Neighborhood', 'New City', 'New State', 'New Complement');
+
+INSERT INTO TB_CUSTOMERS (NAME, EMAIL, PHONE, CELL_PHONE, ZIP_CODE, ADDRESS, ADDRESS_NUMBER, NEIGHBORHOOD, CITY, STATE, COMPLEMENT)
+VALUES ('Name 005', 'old5.email@example.com', '555555555', '555555555', '12345678', 'New Address', '123', 'New Neighborhood', 'New City', 'New State', 'New Complement');

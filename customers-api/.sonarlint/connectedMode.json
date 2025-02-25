@@ -1,0 +1,6 @@
+{
+  "sonarQubeUri": "http://localhost:9000",
+  "projectKey": "customers",
+  "organizationKey": "my-org",
+  "projectName": "Customers"
+}
